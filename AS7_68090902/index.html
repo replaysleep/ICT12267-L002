@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AS7 68090902 Phoomanun Chawana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <body>
+        <video autoplay loop muted id="myVideo">
+            <source src="VDO/VDO/204006-923133925_small.mp4" type="video/mp4">
+        </video>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">Phoomanun Chawana</a>
+            </div>
+        </nav>
+    
+        <div class="form-wrapper">
+            <div class="card p-4 form-card">
+                <h2 class="text-center mb-4">แบบฟอร์มลงทะเบียน</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control" placeholder="กรุณากรอกชื่อ-นามสกุล" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">ตำแหน่ง</label>
+                        <select class="form-select" required>
+                            <option selected disabled>Please select a position</option>
+                            <option value="manager">Manager</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                        </select>
+                    </div>
+    
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-success me-2">ลงทะเบียน</button>
+                        <button type="reset" class="btn btn-danger">ล้างข้อมูล</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="video-controls-container">
+            <button class="btn btn-warning btn-sm shadow" onclick="document.getElementById('myVideo').play()">
+                <i class="fas fa-play"></i> Play
+            </button>
+            <button class="btn btn-danger btn-sm shadow" onclick="document.getElementById('myVideo').pause()">
+                <i class="fas fa-pause"></i> Pause
+            </button>
+        </div>
+    
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
