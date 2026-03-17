@@ -1,0 +1,165 @@
+/* ตัวแปรสีหลักของธีม */
+:root {
+    --racing-red: #e50914;
+    --dark-bg: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --text-gray: #b3b3b3;
+}
+
+/* ================= การเลื่อนหน้าจอ (Smooth Scroll & Offset) ================= */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #ffffff;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* ================= Navbar ================= */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    border-bottom: 2px solid var(--racing-red);
+    backdrop-filter: blur(10px);
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.navbar-brand .spu { color: #ffffff; font-weight: 800; }
+.navbar-brand .sit { color: var(--racing-red); font-weight: 800; }
+
+.nav-link {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-link:hover, .dropdown-item:hover {
+    color: var(--racing-red) !important;
+}
+/* แต่ง Dropdown ให้เข้ากับ Dark Mode */
+.dropdown-menu { background-color: #000; border: 1px solid #333; }
+.dropdown-item { color: #fff; }
+.navbar-toggler { border-color: var(--racing-red); }
+.navbar-toggler-icon { filter: invert(1) sepia(1) saturate(5) hue-rotate(300deg); }
+
+/* ================= Banner ================= */
+.hero-banner {
+    /* เปลี่ยน url('...') เป็นที่เก็บรูปภาพของคุณ เช่น url('img/bg-racing.jpg') */
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 100%), 
+                url('img/bg.avif');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--racing-red);
+}
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 3px 3px 15px rgba(229, 9, 20, 0.5);
+    animation: slideIn 1s ease-out;
+}
+.hero-subtitle { color: var(--racing-red); font-size: 1.2rem; font-weight: 300; letter-spacing: 3px;}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* ================= Cards ================= */
+.movie-card {
+    background-color: var(--card-bg);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(229, 9, 20, 0.3);
+}
+.movie-card img {
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--racing-red);
+}
+.card-title { font-weight: 700; font-style: italic; color: var(--racing-red); }
+.card-text { color: var(--text-gray); font-size: 0.9rem; }
+
+/* ================= ปุ่มสไตล์ Racing ================= */
+.btn-racing {
+    background-color: var(--racing-red);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    transform: skewX(-15deg);
+    border-radius: 4px;
+    transition: all 0.3s;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.btn-racing:hover {
+    background-color: #fff;
+    color: var(--racing-red);
+    box-shadow: 0 0 15px var(--racing-red);
+}
+.btn-racing span {
+    display: inline-block;
+    transform: skewX(15deg);
+}
+
+/* ================= Modals ================= */
+.modal-content {
+    background-color: var(--card-bg);
+    color: #fff;
+    border: 1px solid var(--racing-red);
+    border-radius: 12px;
+}
+.modal-header { border-bottom: 1px solid #333; }
+.modal-footer { border-top: 1px solid #333; }
+.btn-close { filter: invert(1); }
+.modal-body strong { color: var(--racing-red); }
+
+/* ================= Form & Inputs ================= */
+.form-control {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 0;
+}
+.form-control:focus {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-color: var(--racing-red);
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.5);
+}
+.form-label { font-weight: 500; color: #ccc; }
+
+/* ================= Footer ================= */
+footer {
+    background-color: #050505;
+    border-top: 1px solid #333;
+}
+
+.social-icons a {
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: var(--racing-red);
+    transform: scale(1.2);
+}

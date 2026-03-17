@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 68090902 Phoomanun Chawana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,500;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo SPU SIT_White.png" alt="SPU SIT Logo" style="height: 65px; width: auto; object-fit: contain;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="movieDropdown" role="button" data-bs-toggle="dropdown">
+                            ภาพยนตร์
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#movie1">F1</a></li>
+                            <li><a class="dropdown-item" href="#movie2">Gran Turismo</a></li>
+                            <li><a class="dropdown-item" href="#movie3">Ford v Ferrari</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="container">
+            <p class="hero-subtitle mb-0">ADRENALINE CINEMA</p>
+            <h1 class="hero-title text-white">สัมผัสโลกของภาพยนตร์สุดมันส์</h1>
+            <a href="#movies-section" class="btn-racing mt-4 text-decoration-none"><span>เข้าสู่สนามแข่ง</span></a>
+        </div>
+    </header>
+
+    <section id="movies-section" class="container my-5 pt-4">
+        <h2 class="text-center mb-5 fw-bold" style="font-style: italic;">ภาพยนตร์<span style="color: var(--racing-red);">แนะนำ</span></h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4" id="movie1">
+                <div class="card movie-card h-100">
+                    <img src="img/m1.png" class="card-img-top" alt="F1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">F1 (Formula 1)</h5>
+                        <p class="card-text">เรื่องราวสุดเข้มข้นในวงการแข่งรถสูตรหนึ่ง การต่อสู้ทั้งในและนอกสนามที่เดิมพันด้วยความเร็ว</p>
+                        <div class="mt-auto text-center pt-3">
+                            <button class="btn-racing w-100" data-bs-toggle="modal" data-bs-target="#modalF1"><span>ดูรายละเอียด</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="movie2">
+                <div class="card movie-card h-100">
+                    <img src="img/m2.jpeg" class="card-img-top" alt="Gran Turismo">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">GRAN TURISMO</h5>
+                        <p class="card-text">จากเกมเมอร์สายซิ่ง สู่ยอดนักแข่งระดับโลก สร้างจากเรื่องจริงสุดเหลือเชื่อบนสนามแข่ง</p>
+                        <div class="mt-auto text-center pt-3">
+                            <button class="btn-racing w-100" data-bs-toggle="modal" data-bs-target="#modalGT"><span>ดูรายละเอียด</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="movie3">
+                <div class="card movie-card h-100">
+                    <img src="img/m3.png" class="card-img-top" alt="Ford v Ferrari">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">FORD v FERRARI</h5>
+                        <p class="card-text">การปะทะกันทางวิศวกรรมเพื่อชิงความเป็นหนึ่ง ในการแข่งขัน Le Mans 24 ชั่วโมง</p>
+                        <div class="mt-auto text-center pt-3">
+                            <button class="btn-racing w-100" data-bs-toggle="modal" data-bs-target="#modalFord"><span>ดูรายละเอียด</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalF1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold fst-italic">F1 - ข้อมูลภาพยนตร์</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/bg1.webp" class="img-fluid rounded mb-3" alt="F1">
+                    <p><strong>ผู้กำกับ:</strong> Joseph Kosinski</p>
+                    <p><strong>นักแสดงนำ:</strong> Brad Pitt, Damson Idris</p>
+                    <p><strong>เรื่องย่อ:</strong> อดีตนักแข่งรถ Formula 1 ที่หวนคืนสู่วงการอีกครั้งเพื่อเป็นพี่เลี้ยงให้กับนักแข่งดาวรุ่งหน้าใหม่ในทีมแข่งรถ APXGP การต่อสู้ทั้งในและนอกสนามที่เดิมพันด้วยความเร็วและศักดิ์ศรี</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGT" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold fst-italic">GRAN TURISMO - ข้อมูลภาพยนตร์</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/bg2.webp" class="img-fluid rounded mb-3" alt="GT">
+                    <p><strong>ผู้กำกับ:</strong> Neill Blomkamp</p>
+                    <p><strong>นักแสดงนำ:</strong> David Harbour, Orlando Bloom, Archie Madekwe</p>
+                    <p><strong>เรื่องย่อ:</strong> สร้างจากเรื่องจริงสุดเหลือเชื่อของ Jann Mardenborough วัยรุ่นผู้มีทักษะการเล่นเกมระดับเทพ ที่ชนะการแข่งขันของ Nissan และก้าวเข้าสู่โลกของการแข่งรถมืออาชีพของจริง</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFord" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold fst-italic">FORD v FERRARI - ข้อมูลภาพยนตร์</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/bg3.jpg" class="img-fluid rounded mb-3" alt="Ford">
+                    <p><strong>ผู้กำกับ:</strong> James Mangold</p>
+                    <p><strong>นักแสดงนำ:</strong> Matt Damon, Christian Bale</p>
+                    <p><strong>เรื่องย่อ:</strong> นักออกแบบรถยนต์ชาวอเมริกัน Carroll Shelby และนักแข่งรถผู้กล้าบ้าบิ่นชาวอังกฤษ Ken Miles ร่วมมือกันสร้างรถแข่งฟอร์ดรุ่นใหม่ เพื่อล้มแชมป์เก่าอย่างเฟอร์รารี่ ในการแข่งขัน Le Mans 24 ชั่วโมง ปี 1966</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="container my-5 py-5">
+        <div class="row align-items-center bg-dark p-5 rounded" style="border-left: 5px solid var(--racing-red);">
+            <div class="col-md-8 mx-auto text-center">
+                <h2 class="fw-bold fst-italic mb-4">เกี่ยวกับเรา</h2>
+                <p class="lead text-muted">"เมื่อความเร็วคือชีวิต และสนามแข่งคือลมหายใจ"</p>
+                <p>เว็บไซต์ของเราสร้างขึ้นเพื่อรวบรวมสุดยอดภาพยนตร์ที่ขับเคลื่อนด้วยอะดรีนาลีน เสียงคำรามของเครื่องยนต์ V8 และเรื่องราวการไล่ล่าความฝันบนเส้นทางที่วัดกันด้วยเสี้ยววินาที สัมผัสประสบการณ์ภาพยนตร์มอร์เตอร์สปอร์ตไปกับเรา</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5 pb-5">
+        <h2 class="text-center mb-5 fw-bold fst-italic">ติดต่อ<span style="color: var(--racing-red);">เรา</span></h2>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <form class="p-4" style="background-color: var(--card-bg); border-radius: 8px; border-top: 3px solid var(--racing-red);">
+                    <div class="mb-4">
+                        <label for="fullName" class="form-label">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control form-control-lg" id="fullName" placeholder="กรุณากรอกชื่อของคุณ" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="emailAddress" class="form-label">อีเมล</label>
+                        <input type="email" class="form-control form-control-lg" id="emailAddress" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="messageBox" class="form-label">ข้อความ</label>
+                        <textarea class="form-control form-control-lg" id="messageBox" rows="5" placeholder="พิมพ์ข้อความที่นี่..." required></textarea>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn-racing w-50"><span>ส่งข้อความ</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-5">
+        <div class="container">
+            <div class="social-icons mb-4 fs-3">
+                <a href="https://www.facebook.com/replayy.p" target="_blank" class="me-4"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/replayy_p" target="_blank" class="me-4"><i class="bi bi-instagram"></i></a>
+                <a href="https://line.me/ti/p/pound110451" target="_blank"><i class="bi bi-line"></i></a>
+            </div>
+            <p class="mb-0 text-light" style="letter-spacing: 1px;">
+                &copy; 2026 Movie By 
+                <span style="color: var(--racing-red); font-weight: bold;">[</span><span class="text-white fw-bold">68090902 Phoomanun Chawana</span><span style="color: var(--racing-red); font-weight: bold;">]</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
