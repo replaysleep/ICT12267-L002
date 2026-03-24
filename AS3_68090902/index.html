@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As3_68090902_002</title> 
+    <style>
+        .spiner {
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 25px solid whitesmoke;
+            border-top: 20px solid purple;
+            animation: ani 2.5s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        .spiner.circle2 {
+            background-color: palevioletred; 
+            border-top: 20px solid mediumspringgreen;
+        }
+
+        @keyframes ani {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        body {
+            background-image: url(img/cat.avif);
+        }
+    </style>
+</head>
+<body>
+    <h1>68090902 ภูมิอนันต์ จะวะนะ</h1> 
+    <h2>เลขที่: 26 กลุ่มเรียน: 002</h2> 
+    <div class="spiner"></div>
+    <div class="spiner circle2"></div>
+</body>
+</html>
